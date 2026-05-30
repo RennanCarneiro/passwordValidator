@@ -29,11 +29,7 @@ public class PasswordController {
     })
     @PostMapping("/validate")
     public ResponseEntity<String> validatePassword(@RequestBody String password) {
-        try {
-            String result = service.processPassword(password);
-            return ResponseEntity.ok(result);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+        String result = service.processPassword(password);
+        return ResponseEntity.ok(result);
     }
 }
