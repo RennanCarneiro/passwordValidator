@@ -1,15 +1,16 @@
-package main.java.dio.passwordvalidation.controller;
-
-import main.java.dio.passwordvalidation.service.passwordValidationService;
+package dio.passwordValidation.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import dio.passwordValidation.service.PasswordValidationService;
+
 
 @RestController
 @RequestMapping("/api/auth")
 public class PasswordController {
-    private final passwordValidationService service;
+    private final PasswordValidationService service;
 
-    public passwordController(passwordValidationService service){
+    public PasswordController(PasswordValidationService service) {
         this.service = service;
     }
 

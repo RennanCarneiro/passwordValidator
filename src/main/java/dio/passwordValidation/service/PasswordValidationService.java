@@ -1,12 +1,13 @@
-package main.java.dio.passwordvalidation.service;
+package dio.passwordValidation.service;
+import dio.passwordValidation.pattern.chain.*; // Importa todos os validadores da Chain
+import org.springframework.stereotype.Service; // Importa a anotação do Spring
 
-import main.java.dio.passwordvalidation.pattern.chain.*;
-
-public class passwordValidationService {
+@Service
+public class PasswordValidationService {
 
     private final PasswordValidator validatorChain;
 
-    public passwordValidationService() {
+    public PasswordValidationService() {
         // Tamanho -> Maiúscula -> Especial
         this.validatorChain = new LengthValidator();
         this.validatorChain.linkWith(new UpperCaseValidator()).linkWith(new SpecialCharValidator()); 

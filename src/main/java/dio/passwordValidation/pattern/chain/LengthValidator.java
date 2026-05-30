@@ -1,4 +1,4 @@
-package main.java.dio.passwordvalidation.pattern.chain;
+package dio.passwordValidation.pattern.chain;
 
 public class LengthValidator extends PasswordValidator {
     @Override
