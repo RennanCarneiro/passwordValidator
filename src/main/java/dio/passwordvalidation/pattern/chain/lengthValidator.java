@@ -1,5 +1,10 @@
 package main.java.dio.passwordvalidation.pattern.chain;
 
-public class lengthValidator {
-    
+public class lengthValidator extends passwordValidator {
+    @Override
+    public void validate(String password){
+        if(password == null || password.length() < 0)
+            throw new IllegalArgumentException("A senha deve conter pelo menos 8 caracteres.");
+        checkNext(password);
+    }
 }
