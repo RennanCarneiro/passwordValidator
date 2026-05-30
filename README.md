@@ -40,8 +40,10 @@ A API está hospedada na nuvem utilizando o **Render** e conteinerizada com **Do
    git clone [https://github.com/RennanCarneiro/passwordValidation.git](https://github.com/SEU_USUARIO/passwordValidation.git)
 
 ## Endpoint Principal
-POST /api/auth/validate
--Valida uma senha com base nas seguintes regras:
--Mínimo de 8 caracteres.
--Pelo menos uma letra maiúscula.
--Pelo menos um caractere especial.
+
+### `POST /api/auth/validate`
+
+Valida uma senha com base nas seguintes regras:
+- Mínimo de 8 caracteres.
+- Pelo menos uma letra maiúscula.
+- Pelo menos um caractere especial.
