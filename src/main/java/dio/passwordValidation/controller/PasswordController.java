@@ -21,4 +21,5 @@ public class PasswordController {
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+    }
 }
