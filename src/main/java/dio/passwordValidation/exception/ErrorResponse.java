@@ -1,5 +1,6 @@
 package dio.passwordValidation.exception;
+import java.time.LocalDateTime;
 
-public class ErrorResponse {
+public record ErrorResponse(LocalDateTime timestamp, Integer status, String message, String path) {
     
 }
