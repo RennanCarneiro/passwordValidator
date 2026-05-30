@@ -33,12 +33,6 @@ A API está hospedada na nuvem utilizando o **Render** e conteinerizada com **Do
 * **Documentação:** Springdoc OpenAPI (Swagger UI)
 * **DevOps/Infra:** Docker & Render (PaaS)
 
-## ⚙️ Como Executar o Projeto Localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/RennanCarneiro/passwordValidation.git](https://github.com/SEU_USUARIO/passwordValidation.git)
-
 ## Endpoint Principal
 
 ### `POST /api/auth/validate`
