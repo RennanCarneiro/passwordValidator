@@ -1,10 +1,10 @@
 package main.java.dio.passwordvalidation.pattern.chain;
 
-public abstract class passwordValidator {
-    private passwordValidator nextValidator;
+public abstract class PasswordValidator {
+    private PasswordValidator nextValidator;
 
     //metodo para ligar um ao outro
-    public passwordValidator linkWith(passwordValidator nexValidator){
+    public PasswordValidator linkWith(PasswordValidator nexValidator){
         this.nextValidator = nexValidator;
         return nexValidator;
     }

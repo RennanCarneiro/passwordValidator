@@ -1,6 +1,6 @@
 package main.java.dio.passwordvalidation.pattern.chain;
 
-public class lengthValidator extends passwordValidator {
+public class LengthValidator extends PasswordValidator {
     @Override
     public void validate(String password){
         if(password == null || password.length() < 0)

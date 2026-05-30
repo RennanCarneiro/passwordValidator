@@ -1,6 +1,6 @@
 package main.java.dio.passwordvalidation.pattern.chain;
 
-public class specialCharValidator extends passwordValidator{
+public class SpecialCharValidator extends PasswordValidator{
 
     @Override
     public void validate(String password) {

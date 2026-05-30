@@ -1,6 +1,6 @@
 package main.java.dio.passwordvalidation.pattern.chain;
 
-public class upperCaseValidator  extends passwordValidator{
+public class UpperCaseValidator  extends PasswordValidator{
 
     @Override
     public void validate(String password) {
